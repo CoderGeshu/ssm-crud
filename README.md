@@ -20,7 +20,7 @@
 1. 项目克隆到本地
 
    ```
-   git clone **
+   git clone https://github.com/CoderGeshu/SSM-CRUD.git
    ```
 
 2. 在本地 IDE 中导入本项目（本人使用的是 IDEA），因为是 SSM 的 Web 项目，所以需要配置 Tomcat，这一步骤此处不再详细展开（有问题，找度娘）。
