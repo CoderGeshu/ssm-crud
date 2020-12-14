@@ -47,7 +47,9 @@
 
 本项目旨在用来和大家学习交流，方便快速掌握 SSM 框架技术，不参与任何商用成分。
 
-此项目来源于 B 站视频 https://www.bilibili.com/video/BV17W411g7zP，由本人根据视频实现，其中删去了部分内容：
+此项目来源于 B 站视频 https://www.bilibili.com/video/BV17W411g7zP 
+
+由本人根据视频内容实现，但在此项目中删去了部分内容：
 
 - 使用单元测试来检测 SSM 框架的可用性及分页结果；
 - MyBatis 逆向工程；
