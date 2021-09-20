@@ -35,24 +35,20 @@
 
 - 支持分页显示用户信息、对用户信息单个或批量删除；
 
-![展示1](https://gitee.com/eric0228/pic-go-images/raw/master/img/image-20201214162125295.png)
+![展示1](https://gitee.com/CoderGeshu/pic-go-images/raw/master/img/image-20201214162125295.png)
 
 - 支持录入信息的前后端校验
 
-![展示2](https://gitee.com/eric0228/pic-go-images/raw/master/img/image-20201214162430565.png)
+![展示2](https://gitee.com/CoderGeshu/pic-go-images/raw/master/img/image-20201214162430565.png)
 
 - 更多功能请自行探索
 
-**注意**
+**作者信息**
 
-本项目旨在用来和大家学习交流，方便快速掌握 SSM 框架技术，不参与任何商用成分。
+> 大家好，我是 CoderGeshu，如果此项目对您有所帮助，别忘了 star 哦<br>
+>
+> 另外，欢迎大家点击关注👉 [CoderGeshu](https://links.jianshu.com/go?to=https%3A%2F%2Fmp.weixin.qq.com%2Fs%2FIziWp01QgxlSUUuICP6_FQ)，第一时间获取最新分享~<br>
 
-此项目来源于 B 站视频 https://www.bilibili.com/video/BV17W411g7zP 
+**巨人的肩膀**
 
-由本人根据视频内容实现，但在此项目中删去了部分内容：
-
-- 使用单元测试来检测 SSM 框架的可用性及分页结果；
-- MyBatis 逆向工程；
-- 一些细节讲述。
-
-感兴趣的童鞋可以自行去观看视频。
+<span style="font-size: 12px; color: #b9b2c2">本项目来源于 B 站视频：https://www.bilibili.com/video/BV17W411g7zP ，并精简了部分内容。</span>
