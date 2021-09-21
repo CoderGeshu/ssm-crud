@@ -194,7 +194,7 @@
         // 跳转到pn页码
         function to_page(pn) {
             $.ajax({
-                url: "${APP_PATH}/emps",
+                url: "${APP_PATH}/emps2",
                 data: "pn=" + pn,
                 type: "get",
                 success: function (result) {
@@ -363,7 +363,7 @@
             let regName = /(^[a-zA-Z0-9_-]{6,16}$)|(^[\u2E80-\u9FFF]{2,5}$)/;
             if (!regName.test(empName)) {
                 // alert("用户名可以是2-5位中文或者6-16位英文和数字的组合");
-                show_validate_msg("#empName_add_input", "error", "用户名必须是6-16位数字和字母的组合或者2-5位中文");
+                show_validate_msg("#empName_add_input", "error", "（前端校验）用户名必须是6-16位数字和字母的组合或者2-5位中文");
                 return false;
             } else {
                 show_validate_msg("#empName_add_input", "success", "");
@@ -374,7 +374,7 @@
             if (!regEmail.test(email)) {
                 // alert("邮箱格式不正确");
                 //应该清空这个元素之前的样式
-                show_validate_msg("#email_add_input", "error", "邮箱格式不正确");
+                show_validate_msg("#email_add_input", "error", "（前端校验）邮箱格式不正确");
                 return false;
             } else {
                 show_validate_msg("#email_add_input", "success", "");
@@ -396,7 +396,8 @@
             }
         }
 
-        // 数据库校验用户名是否可用
+        // 当输入用户姓名时，检测用户姓名是否符合规则
+        // 以及数据库校验用户名是否可用
         $("#empName_add_input").change(function () {
             //发送ajax请求校验用户名是否可用
             let empName = this.value;
@@ -464,7 +465,7 @@
         $(document).on("click", ".edit_btn", function () {
             // 1. 查出并显示部门信息
             getDepts("#empUpdateModal select");
-            // 2. 查出并显示员工信息（1、2顺序不可颠倒，不然部门信息无法正常显示
+            // 2. 查出并显示员工信息 1、2顺序不可颠倒，不然部门信息无法正常显示
             getEmployeeById($(this).attr("edit-id"));
             // 弹出模态框
             $("#empUpdateModal").modal({

@@ -25,7 +25,7 @@
     </bean>
 
     <!-- =======================Spring和Mybatis整合========================= -->
-    <!-- 配置spring和mybatis的整合   -->
+    <!-- 配置spring和mybatis的整合 -->
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <!-- 指定mybatis全局配置文件 -->
         <property name="configLocation" value="classpath:mybatis-config.xml"/>
