@@ -25,7 +25,7 @@
 
 2. 在本地 IDE 中导入本项目（本人使用的是 IDEA），因为是 SSM 的 Web 项目，所以需要配置 Tomcat，这一步骤此处不再详细展开（有问题，找度娘）。
 
-3. 使用 `src/main/resources/db`  目录下的 `db.sql` 语句创建相应的数据库，注意数据库配置文件`jdbc.properties` 与本地数据库环境的一致性。
+3. 本地创建数据库 ssm_crud，并使用 `src/main/resources/db`  目录下的 `db.sql` 语句创建相应的表结构，注意数据库配置文件`jdbc.properties` 与本地数据库环境的一致性。
 
 4. 运行 `src/test/java/MapperTest.java` 测试类，其目的是向数据库中插入数据。
 
